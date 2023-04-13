@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="dist/output.css" />
+    <title>Chat</title>
+  </head>
+  <body class="bg-slate-900 flex flex-col p-4 h-screen gap-4">
+    <input
+      autocomplete="off"
+      class="bg-transparent text-xl font-semibold p-2 border-b border-slate-600 border-opacity-20 placeholder:text-slate-600 text-slate-300 font-sans outline-none ring-0 hover:text-slate-200 transition-all"
+      id="username"
+      type="text"
+      placeholder="Username"
+    />
+    <div class="grow">
+      <ul id="history" class="flex flex-col gap-2"></ul>
+    </div>
+    <div class="w-full flex gap-2">
+      <input
+        class="bg-slate-950 bg-opacity-50 p-2 rounded-md text-slate-200 border-2 border-slate-950 border-opacity-50 hover:border-slate-800 font-sans grow outline-slate-800 focus:outline-none active:outline-none ring-0 hover:text-white transition-all"
+        id="message"
+        type="text"
+        placeholder="Message"
+      />
+      <button
+        class="p-2 rounded-md text-white bg-sky-500 w-20 transition-all hover:bg-sky-400 border-2 border-sky-500 hover:border-sky-400"
+      >
+        Send
+      </button>
+    </div>
+  </body>
+  <script
+    src="https://cdn.socket.io/4.6.0/socket.io.min.js"
+    integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+"
+    crossorigin="anonymous"
+  ></script>
+  <script src="app.js"></script>
+</html>

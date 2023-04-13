@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  .msg-username {
+    @apply text-sky-400;
+  }
+
+  .msg-time {
+    @apply text-slate-500 text-xs;
+  }
+
+  .msg-text {
+    @apply text-white;
+  }
+
+  .msg-li {
+    @apply bg-slate-600 bg-opacity-5 rounded-md p-2;
+  }
+}
