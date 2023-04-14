@@ -1,4 +1,4 @@
-const socket = io("ws://quick-chat-server.onrender.com:10000");
+const socket = io("wss://quick-chat-server.onrender.com:10000");
 const history = document.getElementById("history");
 const usernameEl = document.querySelector("#username");
 
