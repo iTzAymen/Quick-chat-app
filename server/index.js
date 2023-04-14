@@ -11,4 +11,4 @@ io.on("connection", (socket) => {
   });
 });
 
-http.listen(8080, () => console.log("listening on http://localhost:8080"));
+http.listen(8080, () => console.log("listening on port 8080"));
