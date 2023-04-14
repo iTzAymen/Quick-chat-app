@@ -12,4 +12,4 @@ io.on("connection", (socket) => {
   });
 });
 const port = process.env.PORT || 8080;
-http.listen(port, () => console.log(`listening on port ${port}`));
+http.listen(port, "0.0.0.0", () => console.log(`listening on port ${port}`));
