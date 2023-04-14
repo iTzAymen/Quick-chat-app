@@ -1,3 +1,4 @@
+require("dotenv").config();
 const http = require("http").createServer();
 
 const io = require("socket.io")(http, {
@@ -10,5 +11,5 @@ io.on("connection", (socket) => {
     io.emit("message", message, socket.id);
   });
 });
-
-http.listen(8080, () => console.log("listening on port 8080"));
+const port = process.env.PORT || 8080;
+http.listen(port, () => console.log(`listening on port ${port}`));
